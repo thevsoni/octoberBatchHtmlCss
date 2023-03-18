@@ -1,49 +1,73 @@
 <html>
+
 <head>
     <link href="/css/lecture_rev_5.css" rel="stylesheet" />
 </head>
+
 <body>
     <div class="container flex flex-col">
         <div class="section1">
-            <img src="https://st.adda247.com/https://d2fldgtygklyv6.cloudfront.net/113511677240718.png?tr=w-193" height="100%"  width="100%"  style="border-radius: 20px;"/>
+            <img src="https://st.adda247.com/https://d2fldgtygklyv6.cloudfront.net/113511677240718.png?tr=w-193"
+                height="100%" width="100%" style="border-radius: 20px;" />
         </div>
 
         <div class="flex  section2 flex-col">
-           <div class="flex title">
-            <span> Detached House </span>
-            <div class="dot"></div>
-            <span> 5y Old </span>
-            
-            
-           </div>
-  
-           <div class="sub-heading ">$75000</div>
-           <div class="adress">743 Vishnupuri kanpur uttar pradesh</div>
-           <hr style="width:100%"/>
-           <div class="flex">
-            <div class="flex">
+            <div class="flex title">
+                <span> Detached House </span>
                 <div class="dot"></div>
-                <span> 3 Bed Room</span>
+                <span> 5y Old </span>
+
+
             </div>
+
+            <div class="sub-heading ">$75000</div>
+            <div class="adress">743 Vishnupuri kanpur uttar pradesh</div>
+            <hr style="width:100%" />
             <div class="flex">
-                <div class="dot"></div>
-                <span> 2  BathRooms</span>
+                <div class="flex">
+                    <div class="dot"></div>
+                    <span> 3 Bed Room</span>
+                </div>
+                <div class="flex">
+                    <div class="dot"></div>
+                    <span> 2 BathRooms</span>
+                </div>
             </div>
-           </div>
-           <hr style="width:100%"/>
-           <div class="flex flex-col">
-            <span>Posted By:</span>
-            <div class="flex">
-                <img  class = 'profile'src="https://st.adda247.com/https://d2fldgtygklyv6.cloudfront.net/113511677240718.png?tr=w-193" height="40px%"  width="40px" />
-                <div class="flex flex-col"> 
-                <div>Vishal Soni </div>
-                <div>123456789</div>
+            <hr style="width:100%" />
+            <div class="flex flex-col">
+                <span>Posted By:</span>
+                <div class="flex">
+                    <img class='profile'
+                        src="https://st.adda247.com/https://d2fldgtygklyv6.cloudfront.net/113511677240718.png?tr=w-193"
+                        height="40px%" width="40px" />
+                    <div class="flex flex-col">
+                        <div>Vishal Soni </div>
+                        <div>123456789</div>
+                    </div>
+                </div>
             </div>
-            </div>
-           </div>
         </div>
     </div>
 </body>
+<script>
+    const containerMain = document.querySelector(".containerMain");
+    const container = document.querySelector(".container");
+    let img = document.querySelector("img");
+    const images = [
+        "https://images.unsplash.com/photo-1674574124349-0928f4b2bce3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1679023559573-d12c6b137142?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1670272506173-0b0be082a52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1674574124649-778f9afc0e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+    ]
+
+    images.forEach(element => {
+        img.src = element;
+        let containerNew = container.cloneNode(true);
+        containerMain.appendChild(containerNew);
+    });
+
+</script>
+
 </html>
 
 <!-- By default flex direction is row wise in css  -->
